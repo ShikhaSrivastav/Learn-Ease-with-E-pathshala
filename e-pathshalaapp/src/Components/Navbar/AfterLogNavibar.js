@@ -1,6 +1,6 @@
 import React from 'react'
 import { Container, Navbar, Nav, NavDropdown, Form, FormControl, Button } from 'react-bootstrap'
-import './Navibar.css'
+import './navbar.css'
 import { useNavigate } from 'react-router'
 import { useState } from 'react'
 import { toast } from 'react-toastify'
@@ -42,7 +42,32 @@ const AfterLogNavibar = () => {
 
   return (
 <div >
-<Navbar className='Main-Nav'>
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand" href="/"><img src="assets/img/logo.png" alt="E-Pathshala" /></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars ms-1"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="/Courses">Courses</a></li>
+                        {/* <li class="nav-item"><a class="nav-link" href="/portfolio">Portfolio</a></li> */}
+                        <li class="nav-item"><a class="nav-link" href="/Aboutus">About</a></li>
+                        {/* <li class="nav-item"><a class="nav-link" href="#team">Team</a></li> */}
+                        {/* <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li> */}
+                        {/* <li class="nav-item"><a class="nav-link" href="/signin">Signin</a></li> */}
+                        {/* <li class="nav-item"><a class="nav-link" href="/signup">Signup</a></li> */}
+                        <li class="nav-item"><a class="nav-link" href="/Feedback">FeedBack</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/Profile">Profile</a></li>
+                        <li class="nav-item"><a class="nav-link" onClick={logoutUser}>Logout</a></li>
+
+                       {/* <li> <button class="nav-item" onClick={logoutUser}>Logout</button></li> */}
+                    </ul>
+                </div>
+            </div>
+        </nav>
+{/* <Navbar className='Main-Nav'>
   <Container fluid>
     <Navbar.Brand className='Brand' style={{color:"black"}} href="#">E-LEARNING</Navbar.Brand>
     <Navbar.Toggle aria-controls="navbarScroll" />
@@ -52,8 +77,8 @@ const AfterLogNavibar = () => {
         style={{ maxHeight: '100px' }}
         navbarScroll
       >
-        {/* <Nav.Link href="/Home">Home</Nav.Link>
-        <Nav.Link href="/Aboutus">Aboutus</Nav.Link> */}
+        <Nav.Link href="/Home">Home</Nav.Link>
+        <Nav.Link href="/Aboutus">Aboutus</Nav.Link> */} 
         {/* <NavDropdown title="Link" id="navbarScrollingDropdown">
           <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
           <NavDropdown.Item href="#action4">Another action</NavDropdown.Item>
@@ -61,7 +86,7 @@ const AfterLogNavibar = () => {
           <NavDropdown.Item href="#action5">
             Something else here
           </NavDropdown.Item>
-        </NavDropdown> */}
+        </NavDropdown>
         <Nav.Link href="/UserCourses" >
           Courses
         </Nav.Link>
@@ -83,9 +108,9 @@ const AfterLogNavibar = () => {
         />
         <Button variant="outline-success">Search</Button>
       </Form> */}
-    </Navbar.Collapse>
+    {/* </Navbar.Collapse>
   </Container>
-</Navbar>
+</Navbar> */}
 </div>
   )
 }
