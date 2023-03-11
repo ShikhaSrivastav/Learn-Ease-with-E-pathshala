@@ -239,6 +239,10 @@
       width: 70%;
       height: 70%;
     }
+    #hey{
+      background-color: white;
+      color: white;
+    }
     /* .cardcss{
       /* style={{
         width: '24rem',
@@ -270,3 +274,4 @@
   /* .container { */
     /* padding: 2px 16px; */
   /* } */ 
+ 
