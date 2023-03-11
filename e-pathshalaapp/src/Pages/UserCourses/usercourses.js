@@ -48,6 +48,7 @@ const UserCourses = () => {
    
  
     <div className="imageBack">
+      
       <div className="col">
         <div>
           <AfterLogNavibar />
