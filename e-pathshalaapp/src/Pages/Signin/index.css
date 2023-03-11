@@ -5,3 +5,17 @@ h1 {
     background-color: bisque;
     height: 100vh
   }
+  #hey{
+    background-color: white;
+    color: white;
+  }
+#box{
+  background-color: white;
+  width: auto;
+  height: auto;
+  border: 2px;
+  box-shadow: 5px 5px 5px black;
+}
+#mydiv{
+  background-image: "G:\PG DAC\pgdacproject\frontend\my-app\public\assets\img\home3.png";
+}
